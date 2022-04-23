@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --defaultcolor: black;
+  --defaultBgColor: white;
+  --mainwidth: 100vw;
+}
+/* header */
+header {
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  border: 2px solid red;
+  z-index: 0;
+}
+
+h1 {
+  text-align: left;
+  margin: 5vh 2vw;
+}
+
+.h1b {
+  margin-left: 7vw;
+}
+
+h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.logo {
+  width: 20vw;
+  height: 18vh;
+  border: 2px solid green;
+  background-color: lightgreen;
+  position: fixed;
+  margin-top: -20vh;
+  margin-left: 75vw;
+}
+
+img {
+  position: fixed;
+  width: 40vw;
+  margin: -25vh 30vw;
+  z-index: 1;
+}
+/* mainGesamt */
+main {
+  width: var(--mainwidth);
+}
+
+.mainGesamt-linksZutaten h2 {
+  text-align: left;
+  margin: 2vh 10vw;
+}
+
+.mainGesamt-rechtsZubereitung h2 {
+  text-align: right;
+  margin: 2vh 10vw;
+}
+
+.mainGesamt {
+  width: 100%;
+  /* margin: auto; */
+}
+/* mainGesamt links und rechts und nwa */
+.mainGesamt-linksZutaten,
+.mainGesamt-rechtsZubereitung,
+.mainGesamt-naehrwertangaben {
+  display: inline-block;
+  /* width: 50%; */
+  height: 65vh;
+  border: 2px solid blue;
+  overflow: auto;
+}
+
+.mainGesamt-linksZutaten {
+  position: absolute;
+  left: 0;
+  width: 30%;
+}
+
+.mainGesamt-linksZutaten h2 {
+  margin-left: 5vw;
+}
+
+.mainGesamt-linksZutaten table {
+  margin-top: 18vh;
+  margin-left: 5vw;
+}
+.mainGesamt-linksZutaten table tr td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+table tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.mainGesamt-naehrwertangaben ul {
+  position: absolute;
+  left: 30vw;
+  top: 50vh;
+  list-style-type: none;
+  width: 20%;
+  height: 40%;
+  border: 2px solid yellow;
+  overflow: auto;
+}
+
+.mainGesamt-naehrwertangaben ul li {
+  padding: 10px 0px;
+}
+
+.mainGesamt-rechtsZubereitung {
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+.mainGesamt-rechtsZubereitung ul {
+  text-align: justify;
+  margin-top: 18vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.mainGesamt-rechtsZubereitung ul li {
+  padding: 5px;
+}
+/* footer */
+footer {
+  width: 100vw;
+  height: 10vh;
+  border: 2px solid red;
+  position: fixed;
+  bottom: 0;
+}
