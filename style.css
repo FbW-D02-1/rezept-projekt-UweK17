@@ -18,11 +18,13 @@ header {
   height: 25vh;
   border: 2px solid red;
   z-index: 0;
+  overflow: auto;
 }
 
 h1 {
   text-align: left;
   margin: 5vh 2vw;
+  overflow: auto;
 }
 
 .h1b {
