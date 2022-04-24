@@ -56,7 +56,7 @@ main {
   width: var(--mainwidth);
 }
 
-.mainGesamt-linksZutaten h2 {
+.mainGesamt-linksZutatenHg h2 {
   text-align: left;
   margin: 2vh 10vw;
 }
@@ -71,7 +71,8 @@ main {
   /* margin: auto; */
 }
 /* mainGesamt links und rechts und nwa */
-.mainGesamt-linksZutaten,
+.mainGesamt-linksZutatenHg,
+.mainGesamt-linksZutatenSa,
 .mainGesamt-rechtsZubereitung,
 .mainGesamt-naehrwertangaben {
   display: inline-block;
@@ -81,21 +82,21 @@ main {
   overflow: auto;
 }
 
-.mainGesamt-linksZutaten {
+.mainGesamt-linksZutatenHg {
   position: absolute;
   left: 0;
-  width: 30%;
+  width: 15%;
 }
 
-.mainGesamt-linksZutaten h2 {
-  margin-left: 5vw;
+.mainGesamt-linksZutatenHg h2 {
+  margin-left: 1vw;
 }
 
-.mainGesamt-linksZutaten table {
-  margin-top: 18vh;
-  margin-left: 5vw;
+.mainGesamt-linksZutatenHg table {
+  margin-top: 10vh;
+  margin-left: 1vw;
 }
-.mainGesamt-linksZutaten table tr td {
+.mainGesamt-linksZutatenHg table tr td {
   border: 1px solid black;
   padding: 4px;
 }
@@ -104,13 +105,37 @@ table tr:nth-child(even) {
   background-color: lightgrey;
 }
 
-.mainGesamt-naehrwertangaben ul {
+.mainGesamt-linksZutatenSa {
+  position: absolute;
+  left: 15%;
+  width: 15%;
+}
+
+.mainGesamt-linksZutatenSa h2 {
+  margin-top: 1vh;
+  margin-left: 1vw;
+  padding-top: 10px;
+}
+
+.mainGesamt-linksZutatenSa table {
+  margin-top: 10vh;
+  margin-left: 1vw;
+}
+.mainGesamt-linksZutatenSa table tr td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+table tr:nth-child(even) {
+  background-color: lightgrey;
+}
+.mainGesamt-naehrwertangaben {
   position: absolute;
   left: 30vw;
-  top: 50vh;
+  top: 47vh;
   list-style-type: none;
   width: 20%;
-  height: 40%;
+  height: 43%;
   border: 2px solid yellow;
   overflow: auto;
 }
